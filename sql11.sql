@@ -1,17 +1,5 @@
 use yisu;
 
-SELECT Order_Date, City, Ship_Mode, Total_Amount FROM anoop_sales
-ORDER BY Total_Amount DESC;
-
-SELECT anoop_sales.Order_ID, anoop_sales.Product_Name, anoop_sales.Total_Amount
-FROM anoop_sales
-ORDER BY Total_Amount DESC
-LIMIT 4;
-
-select sum(total_amount) from anoop_sales group by region;
-
-select distinct(Region) as unique_region from anoop_sales;
-use yisu;
 
 #1
 SELECT *
